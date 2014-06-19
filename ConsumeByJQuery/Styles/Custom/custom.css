@@ -1,0 +1,14 @@
+﻿.field-validation-error
+{
+    color: Red;
+}
+
+.error_field
+{
+    color: #f00;
+}
+
+.pagination
+{ 
+	margin: 0px;
+}

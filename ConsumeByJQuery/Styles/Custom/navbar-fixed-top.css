@@ -1,0 +1,16 @@
+﻿body {
+min-height: 100%;
+padding-top: 70px;
+}
+
+.navbar-right
+{
+	padding-right:20px;
+}
+
+.btn-group
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+}

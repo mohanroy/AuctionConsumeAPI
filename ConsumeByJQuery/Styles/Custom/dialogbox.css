@@ -1,0 +1,50 @@
+﻿.dialogBoxWrapper{
+border:0px solid #ff0000;
+-moz-user-focus:ignore;
+height:99%;
+*height:99%;
+*width:98%;
+left:0;
+overflow:hidden;
+position:absolute;
+top:0;
+width:98%;
+z-index:10010;
+}
+
+.dialogBox{
+width:40%;
+padding:1% 2% 2%;
+position:absolute;
+z-index:1000;
+top:30%;
+left:25%;
+right:20%;
+float:left;
+vertical-align:middle;
+}
+
+.dialogMsgWrapper{
+float:left;
+background:#F2DEDE;
+border:1px solid #EBCCD1;
+width:87%;
+padding:16px 30px;
+}
+
+.dialogMsg{
+float:left;
+padding:16px 15px;
+text-align:center;
+font-size:115.8%;
+color:#A94442;
+width:100%;
+}
+
+.dialogButtonSpace{
+border:0px solid #ff0000;
+width:100%;
+float:left;
+text-align:center;
+padding:0.5em;
+}

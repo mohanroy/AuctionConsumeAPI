@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DE4B5F7-6A55-4835-8286-7AF11E029023}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsumeByJQuery</RootNamespace>
+    <AssemblyName>ConsumeByJQuery</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Auction.WebControls">
+      <HintPath>C:\Users\Dell\Google Drive\Auction\DLLs\Auction.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounts\RegisterBackup.aspx" />
+    <Content Include="Accounts\Register.aspx" />
+    <Content Include="Accounts\Login.aspx" />
+    <Content Include="Controls\footer.ascx" />
+    <Content Include="Controls\headerelements.ascx" />
+    <Content Include="Controls\menu.ascx" />
+    <Content Include="Controls\menulogin.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="Domains\Create.aspx" />
+    <Content Include="Domains\Details.aspx" />
+    <Content Include="Domains\List.aspx" />
+    <Content Include="Domains\Update.aspx" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\bg.png" />
+    <Content Include="ProductCategories\Create.aspx" />
+    <Content Include="ProductCategories\Details.aspx" />
+    <Content Include="ProductCategories\List.aspx" />
+    <Content Include="ProductCategories\Update.aspx" />
+    <Content Include="ProductImage\Details.aspx" />
+    <Content Include="ProductImage\Upload.aspx" />
+    <Content Include="Products\Create.aspx" />
+    <Content Include="Products\Details.aspx" />
+    <Content Include="Products\List.aspx" />
+    <Content Include="Products\Update.aspx" />
+    <Content Include="Roles\Create.aspx" />
+    <Content Include="Roles\Details.aspx" />
+    <Content Include="Roles\List.aspx" />
+    <Content Include="Roles\Update.aspx" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\confirmation.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\operation_login - Copy.js" />
+    <Content Include="Scripts\operation_product.js" />
+    <Content Include="Scripts\operation_productimage.js" />
+    <Content Include="Scripts\operation_register - Copy.js" />
+    <Content Include="Scripts\operation_user.js" />
+    <Content Include="Scripts\operation_login.js" />
+    <Content Include="Scripts\operation_productcategory.js" />
+    <Content Include="Scripts\operation_role.js" />
+    <Content Include="Scripts\operation_domain.js" />
+    <Content Include="Scripts\operation_state.js" />
+    <Content Include="States\Create.aspx" />
+    <Content Include="States\Details.aspx" />
+    <Content Include="States\List.aspx" />
+    <Content Include="States\Update.aspx" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\Custom\custom.css" />
+    <Content Include="Styles\Custom\dashboard.css" />
+    <Content Include="Styles\Custom\dialogbox.css" />
+    <Content Include="Styles\Custom\navbar-fixed-top.css" />
+    <Content Include="Styles\Custom\signin.css" />
+    <Content Include="Styles\Custom\thumbnail-gallery.css" />
+    <Content Include="Styles\datepicker.css" />
+    <Content Include="Users\Create.aspx" />
+    <Content Include="Users\Details.aspx" />
+    <Content Include="Users\List.aspx" />
+    <Content Include="Users\Update.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\RegisterBackup.aspx.cs">
+      <DependentUpon>RegisterBackup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\RegisterBackup.aspx.designer.cs">
+      <DependentUpon>RegisterBackup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.nl-NL1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nl-NL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\headerelements.ascx.cs">
+      <DependentUpon>headerelements.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\headerelements.ascx.designer.cs">
+      <DependentUpon>headerelements.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\menulogin.ascx.cs">
+      <DependentUpon>menulogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menulogin.ascx.designer.cs">
+      <DependentUpon>menulogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domains\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domains\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domains\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domains\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domains\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domains\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domains\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Domains\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategories\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategories\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategories\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategories\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImage\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductImage\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImage\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductImage\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Roles\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Roles\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Roles\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Roles\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="States\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="States\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="States\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="States\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="States\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="States\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="States\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="States\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fonts\desktop.ini" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Images\desktop.ini" />
+    <Content Include="Scripts\desktop.ini" />
+    <Content Include="Styles\bootstrap-theme.css.map" />
+    <Content Include="Styles\bootstrap.css.map" />
+    <Content Include="Styles\Custom\desktop.ini" />
+    <Content Include="Styles\desktop.ini" />
+    <None Include="Properties\PublishProfiles\auctionbyjq.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.nl-NL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.nl-NL1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26714</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26714/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
